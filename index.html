@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  412
+                  501
                 </span>
               
 
@@ -453,6 +453,12 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>和之前相同，修改文章，生成静态文件，部署到github</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="部署时的问题"><a href="#部署时的问题" class="headerlink" title="部署时的问题"></a>部署时的问题</h2><p>当设备完全没有操作过git时，直接部署博客会报错：</p>
+<img src="/2021/02/05/hexo博客迁移/git_read_err.png" title="无法访问远程主机">
+<p>此时是还没有将github主机的key添加到本地，可以临时从github中拉一个repo，过程中会提示添加github的key到本地：</p>
+<img src="/2021/02/05/hexo博客迁移/add_git_key_to_local.png">
+<p><strong>参考资料：</strong></p>
+<p><a href="https://swayye.xyz/2020/01/10/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/" target="_blank" rel="noopener">https://swayye.xyz/2020/01/10/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</a></p>
 
           
         

@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo博客迁移]]></title>
     <url>%2F2021%2F02%2F05%2Fhexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%2F</url>
-    <content type="text"><![CDATA[前言本人因做毕设需要购入新电脑一天，几乎所有开发工作都已迁移至新设备，独缺个人博客，趁寒假之际更新一下N久没有维护的个站。 在网上搜索的时候，看到有人利用git的branch，来实现多台设备同时能够维护博客，对我来说个人博客属于私人性质的东西，没有分布式更新的需求，因此本文所用方法只适合更换一台设备写博客，较为简单粗暴。 配置基础环境要配置基础环境，需要做以下几个步骤 安装git，并生成密钥，保存到github账号中 下载并安装Node.js（npm会自己跟着装好） 注意：nodejs 14 与 nodejs 12不完全兼容，本人是在nodejs 12 中建设网站的，转移到14时会有报错，具体解决方法见官方答疑 使用npm安装hexo ，具体指令为npm install -g hexo-cli 具体细节可以参照 建站过程整理这篇文章。 ❗️ 注意，安装完hexo之后不用hexo init 迁移相关文件需要迁移的文件只有： 博客配置文件./_config.yml 主题配置文件夹./theme/ 文章及相关内容的文件夹./source/ 模板文件夹./scaffolds/ 记录博客所有的插件的文件./package.json 在新电脑中重新部署在目录下博客主目录下运行以下命令，会自动读取./package.json的配置，完成相关环境的安装 1npm install 和之前相同，修改文章，生成静态文件，部署到github 12hexo ghexo d]]></content>
+    <content type="text"><![CDATA[前言本人因做毕设需要购入新电脑一天，几乎所有开发工作都已迁移至新设备，独缺个人博客，趁寒假之际更新一下N久没有维护的个站。 在网上搜索的时候，看到有人利用git的branch，来实现多台设备同时能够维护博客，对我来说个人博客属于私人性质的东西，没有分布式更新的需求，因此本文所用方法只适合更换一台设备写博客，较为简单粗暴。 配置基础环境要配置基础环境，需要做以下几个步骤 安装git，并生成密钥，保存到github账号中 下载并安装Node.js（npm会自己跟着装好） 注意：nodejs 14 与 nodejs 12不完全兼容，本人是在nodejs 12 中建设网站的，转移到14时会有报错，具体解决方法见官方答疑 使用npm安装hexo ，具体指令为npm install -g hexo-cli 具体细节可以参照 建站过程整理这篇文章。 ❗️ 注意，安装完hexo之后不用hexo init 迁移相关文件需要迁移的文件只有： 博客配置文件./_config.yml 主题配置文件夹./theme/ 文章及相关内容的文件夹./source/ 模板文件夹./scaffolds/ 记录博客所有的插件的文件./package.json 在新电脑中重新部署在目录下博客主目录下运行以下命令，会自动读取./package.json的配置，完成相关环境的安装 1npm install 和之前相同，修改文章，生成静态文件，部署到github 12hexo ghexo d 部署时的问题当设备完全没有操作过git时，直接部署博客会报错： 此时是还没有将github主机的key添加到本地，可以临时从github中拉一个repo，过程中会提示添加github的key到本地： 参考资料： https://swayye.xyz/2020/01/10/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/]]></content>
       <categories>
         <category>网站建设</category>
       </categories>
