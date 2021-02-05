@@ -86,16 +86,16 @@
 
 
 
-<meta name="description" content="自动机 + 纸笔 = 图灵机">
+<meta name="description" content="以无法为有法，以无限为有限">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fangxun写字的地方">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Fangxun写字的地方">
-<meta property="og:description" content="自动机 + 纸笔 = 图灵机">
+<meta property="og:description" content="以无法为有法，以无限为有限">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fangxun写字的地方">
-<meta name="twitter:description" content="自动机 + 纸笔 = 图灵机">
+<meta name="twitter:description" content="以无法为有法，以无限为有限">
 
 
 
@@ -289,6 +289,204 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/hexo博客迁移/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fangxun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gakki.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fangxun写字的地方">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/hexo博客迁移/" itemprop="url">hexo博客迁移</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T09:47:02+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/网站建设/" itemprop="url" rel="index">
+                    <span itemprop="name">网站建设</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  412
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本人因做毕设需要购入新电脑一天，几乎所有开发工作都已迁移至新设备，独缺个人博客，趁寒假之际更新一下N久没有维护的个站。</p>
+<blockquote>
+<p>在网上搜索的时候，看到有人利用git的branch，来实现多台设备同时能够维护博客，对我来说个人博客属于私人性质的东西，没有分布式更新的需求，因此本文所用方法只适合更换一台设备写博客，较为简单粗暴。</p>
+</blockquote>
+<h1 id="配置基础环境"><a href="#配置基础环境" class="headerlink" title="配置基础环境"></a>配置基础环境</h1><p>要配置基础环境，需要做以下几个步骤</p>
+<ol>
+<li>安装<code>git</code>，并生成密钥，保存到github账号中</li>
+<li>下载并安装<code>Node.js</code>（<code>npm</code>会自己跟着装好） <strong>注意：nodejs 14 与 nodejs 12不完全兼容，本人是在nodejs 12 中建设网站的，转移到14时会有报错，具体解决方法见<a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">官方答疑</a></strong></li>
+<li>使用<code>npm</code>安装<code>hexo</code> ，具体指令为<code>npm install -g hexo-cli</code></li>
+</ol>
+<p>具体细节可以参照 <a href="https://pokerrambo.github.io/2018/05/30/%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B%E6%95%B4%E7%90%86/" target="_blank" rel="noopener">建站过程整理</a>这篇文章。</p>
+<blockquote>
+<p> ❗️  注意，安装完<code>hexo</code>之后不用<code>hexo init</code></p>
+</blockquote>
+<h1 id="迁移相关文件"><a href="#迁移相关文件" class="headerlink" title="迁移相关文件"></a>迁移相关文件</h1><p>需要迁移的文件只有：</p>
+<ol>
+<li>博客配置文件<code>./_config.yml</code></li>
+<li>主题配置文件夹<code>./theme/</code></li>
+<li>文章及相关内容的文件夹<code>./source/</code></li>
+<li>模板文件夹<code>./scaffolds/</code></li>
+<li>记录博客所有的插件的文件<code>./package.json</code> </li>
+</ol>
+<h1 id="在新电脑中重新部署"><a href="#在新电脑中重新部署" class="headerlink" title="在新电脑中重新部署"></a>在新电脑中重新部署</h1><p>在目录下博客主目录下运行以下命令，会自动读取<code>./package.json</code>的配置，完成相关环境的安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>和之前相同，修改文章，生成静态文件，部署到github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -2403,192 +2601,6 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/04/Kindle-订阅RSS/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Fangxun">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/gakki.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Fangxun写字的地方">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/04/Kindle-订阅RSS/" itemprop="url">Kindle 订阅RSS</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-04T10:37:22+08:00">
-                2018-06-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/电子设备/" itemprop="url" rel="index">
-                    <span itemprop="name">电子设备</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  430
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>前几天去配运动眼镜竟然查出了散光，说穿了还是自己作的，明知道睡前躺着水手机伤眼睛，却还是乐此不疲。以前也强迫过自己不把手机带上床，然而收效甚微。那就换个思路吧，既然改变不了睡前看文章的习惯，那就改变文章的载体。相对来说，kindle墨水屏对视力友好了许多。</p>
-<blockquote>
-<p>TIPS: 推荐自备梯子</p>
-</blockquote>
-<p>Reabble 是 Kindle 上的 RSS 新闻阅读器，专为使用电子墨水屏的浏览器设计交互界面，媲美系统原生阅读体验。它使用一款非常优秀的 RSS 阅读器 Inoreader.com 来提供订阅管理。 要使用 Reabble，你首先需要有一个 Inoreader 帐号(<a href="https://www.inoreader.com/" target="_blank" rel="noopener">点此注册</a>)，并在里面添加一些订阅，需要指出的是，国内访问Inoreader不太稳定。</p>
-<img src="/2018/06/04/Kindle-订阅RSS/inosubscribe.png" title="在inoreader中订阅RSS">
-<p>Reabble支持两种阅读方式, 在线阅读和离线阅读。</p>
-<h3 id="1-在线阅读"><a href="#1-在线阅读" class="headerlink" title="1. 在线阅读"></a>1. 在线阅读</h3><p>打开 Kindle 主屏右上角的菜单，选择<strong>「体验版网页浏览器」</strong>并打开网址  <strong>reabble.com</strong>，使用 Inoreader 帐号密码登录。</p>
-<img src="/2018/06/04/Kindle-订阅RSS/reabblekindle.jpg" title="reabble在kindle上的体验效果">
-<h3 id="2-离线阅读"><a href="#2-离线阅读" class="headerlink" title="2. 离线阅读"></a>2. 离线阅读</h3><p>登录 Reabble.com ，打开 Reabble 左下角菜单，选择<strong>「推送设置」</strong>， 设置完成后，你会在每天指定的时间自动收到文章（接收文件时 Kindle 必须连网）。</p>
-<img src="/2018/06/04/Kindle-订阅RSS/configkindle.png" title="在reabble中配置自动推送">
-<p>Reabble 需要你指定哪些订阅源是自动推送的。在 Inoreader 中选中要推送的单一订阅源， 然后点击工具栏上的<strong>「订阅源设置」</strong>，再点击<strong>「指定到新文件夹」</strong>，然后输入<strong>「Kindle」</strong>。 系统会自动推送所有添加到 Kindle 文件夹中的订阅文章。</p>
-<img src="/2018/06/04/Kindle-订阅RSS/configinoreader.png" title="在inoreader中配置自动推送的文件夹">
-<p>参考资料：<a href="http://reabble.com/help" target="_blank" rel="noopener">http://reabble.com/help</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2633,7 +2645,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
                 alt="Fangxun" />
             
               <p class="site-author-name" itemprop="name">Fangxun</p>
-              <p class="site-description motion-element" itemprop="description">自动机 + 纸笔 = 图灵机</p>
+              <p class="site-description motion-element" itemprop="description">以无法为有法，以无限为有限</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -2643,7 +2655,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2717,7 +2729,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">14.2k</span>
+    <span title="Site words total count">14.7k</span>
   
 </div>
 
