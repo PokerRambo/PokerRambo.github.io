@@ -303,6 +303,188 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/hexo美化之添加live2d动画/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fangxun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar-sketch.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fangxun写字的地方">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/hexo美化之添加live2d动画/" itemprop="url">hexo美化之添加live2d动画</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T22:07:12+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/网站建设/" itemprop="url" rel="index">
+                    <span itemprop="name">网站建设</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  324
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-hexo博客文件目录下安装live2D插件"><a href="#1-hexo博客文件目录下安装live2D插件" class="headerlink" title="1.hexo博客文件目录下安装live2D插件"></a>1.hexo博客文件目录下安装live2D插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bashnpm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+<h3 id="2-下载live2D动画模型"><a href="#2-下载live2D动画模型" class="headerlink" title="2.下载live2D动画模型"></a>2.下载live2D动画模型</h3><p><a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">动画选项及对应效果展示</a></p>
+<blockquote>
+<p>live2d-widget-model-chitose<br>live2d-widget-model-z16<br>live2d-widget-model-epsilon2_1<br>live2d-widget-model-gf<br>live2d-widget-model-haru/01<br>live2d-widget-model-haru/02<br>live2d-widget-model-haruto<br>live2d-widget-model-hibiki<br>live2d-widget-model-hijiki<br>live2d-widget-model-izumi<br>live2d-widget-model-koharu<br>live2d-widget-model-miku<br>live2d-widget-model-ni-j<br>live2d-widget-model-nico<br>live2d-widget-model-nietzsche<br>live2d-widget-model-nipsilon<br>live2d-widget-model-nito<br>live2d-widget-model-shizuku<br>live2d-widget-model-tororo<br>live2d-widget-model-tsumiki<br>live2d-widget-model-unitychan<br>live2d-widget-model-wanko</p>
+</blockquote>
+<p>安装示例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-tororo</span><br></pre></td></tr></table></figure>
+<h3 id="3-修改配置文件-config-yml"><a href="#3-修改配置文件-config-yml" class="headerlink" title="3. 修改配置文件_config.yml"></a>3. 修改配置文件<code>_config.yml</code></h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Live2D</span></span><br><span class="line"><span class="comment">## https://github.com/EYHN/hexo-helper-live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span> <span class="comment">#隐藏/显示</span></span><br><span class="line"><span class="attr">  pluginRootPath:</span> <span class="string">live2dw/</span>    <span class="comment">#插件在站点上的根路径(相对)</span></span><br><span class="line"><span class="attr">  pluginJsPath:</span> <span class="string">lib/</span>          <span class="comment">#与插件根目录相关的JavaScript路径(相对)</span></span><br><span class="line"><span class="attr">  pluginModelPath:</span> <span class="string">assets/</span>    <span class="comment">#与插件根(相对)相关的模型路径</span></span><br><span class="line"><span class="attr">  scriptFrom:</span> <span class="string">local</span> <span class="comment"># Default</span></span><br><span class="line">  <span class="comment"># scriptFrom: jsdelivr # jsdelivr CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: unpkg # unpkg CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # Your custom url</span></span><br><span class="line"><span class="attr">  tagMode:</span> <span class="literal">false</span>  <span class="comment">#是否只替换live2d标签而不是注入到所有页面</span></span><br><span class="line"><span class="attr">  log:</span> <span class="literal">false</span> <span class="comment">#是否在控制台显示日志</span></span><br><span class="line"><span class="attr">  model:</span></span><br><span class="line"><span class="attr">    use:</span> <span class="string">live2d-widget-model-wanko</span> <span class="comment">#安装的模型包名称</span></span><br><span class="line"><span class="attr">  display:</span>  <span class="comment">#设置位置和宽高（设置的宽高*2为实际像素，如：50=100px）</span></span><br><span class="line"><span class="attr">    position:</span> <span class="string">right</span></span><br><span class="line"><span class="attr">    width:</span> <span class="number">200</span></span><br><span class="line"><span class="attr">    height:</span> <span class="number">400</span></span><br><span class="line"><span class="attr">  mobile:</span></span><br><span class="line"><span class="attr">    show:</span> <span class="literal">false</span> <span class="comment">#是否在移动端上显示</span></span><br></pre></td></tr></table></figure>
+<p><strong>参考资料：</strong></p>
+<p><a href="https://www.guoxh.com/blog/2019/03/15/hexo%E9%9B%86%E6%88%90live2D%E5%8A%A8%E7%94%BB/" target="_blank" rel="noopener">https://www.guoxh.com/blog/2019/03/15/hexo%E9%9B%86%E6%88%90live2D%E5%8A%A8%E7%94%BB/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/互联网笔试常用数据结构与算法总结-python-模板/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2479,251 +2661,6 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/深度学习与电路理论/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Fangxun">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar-sketch.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Fangxun写字的地方">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/10/深度学习与电路理论/" itemprop="url">深度学习与电路理论</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-10T22:45:16+08:00">
-                2018-08-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/深度学习/" itemprop="url" rel="index">
-                    <span itemprop="name">深度学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  351
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在Coursera上学习吴恩达的DeepLearning.ai时遇到了一个疑惑——为什么一定要深度学习？ 为什么要添加多个隐藏层？吴恩达给出了两种解释：1. 类比人脑， 越靠近输入的层学习越简单的特征，越靠近输出的层将前面各层的特征组合起来学习更加复杂的特征。2. 电路理论。 </p>
-<h3 id="电路理论"><a href="#电路理论" class="headerlink" title="电路理论"></a>电路理论</h3><blockquote>
-<p>There are functions you can compute with a “small” L-layer deep nerual network that shallower networks require exponentiall more hidden units to compute.</p>
-</blockquote>
-<p>例如异或操作：</p>
-<img src="/2018/08/10/深度学习与电路理论/dlcircuit.png" title="吴恩达给出的示意图">
-<p>其中第一种解释很直观，第二种解释虽然直觉上是认可的，但应该有更通俗明白的解释。</p>
-<p>假设输入三位数据$x_1x_2x_3$（e.g. 001), 采用深层网络可以拟合为$x_1⊕x_2⊕x_3$，而浅层网络拟合成什么样呢？这个时候就需要借助数电中根据真值表写逻辑表达式的技巧。</p>
-<h3 id="真值表如下"><a href="#真值表如下" class="headerlink" title="真值表如下"></a>真值表如下</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">$x_1$</th>
-<th style="text-align:center">$x_2$</th>
-<th style="text-align:center">$x_3$</th>
-<th style="text-align:center">True Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>所以浅层网络推导为：</p>
-<p>$x_1⋅x_2⋅x_3+x_1′⋅x_2′⋅x_3+x_1′⋅x_2⋅x_3′+x_1⋅x_2′⋅x_3′$</p>
-<p>显然，深层网络需要的电子器件数为$O(logn)$, 而浅层网络需要$2^{n-1}$指数数量的器件，深层网络的拟合能力要远远强于浅层网络。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2778,7 +2715,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2852,7 +2789,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22k</span>
+    <span title="Site words total count">22.3k</span>
   
 </div>
 
@@ -3391,5 +3328,5 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":50,"height":100},"mobile":{"show":false}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false}});</script></body>
 </html>
