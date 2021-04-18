@@ -95,7 +95,7 @@
 <meta property="og:description" content="使用Hexo + Github搭建个人网站, 是非常简单的一件事。 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/05/30/建站过程整理/deploy.png">
-<meta property="og:updated_time" content="2021-02-04T14:50:06.789Z">
+<meta property="og:updated_time" content="2021-04-18T15:04:24.268Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello, Hexo">
 <meta name="twitter:description" content="使用Hexo + Github搭建个人网站, 是非常简单的一件事。 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  803
+                  851
                 </span>
               
 
@@ -471,6 +471,11 @@
 <p>此时创建新博文后在source/_post文件夹下会出现一个post-name.md文件和/post-name文件夹，将博文需要的图片都存放于此。</p>
 <p>在文章中需要插入图片的地方输入：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img <span class="tag">&lt;<span class="name">filename</span>&gt;</span> 图片的说明 %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a>文章加密</h3><p>安装加密模块: <a href="https://github.com/D0n9X1n/hexo-blog-encrypt" target="_blank" rel="noopener">https://github.com/D0n9X1n/hexo-blog-encrypt</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install --save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
+<p>快速使用: </p>
+<p>将password字段添加至文章头</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2020-03-13 21:12:21</span><br><span class="line">password: muyiio</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -688,7 +693,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步：安装Node-js和Git-在Github中建立个站的repo"><span class="nav-number">1.</span> <span class="nav-text">第一步：安装Node.js和Git, 在Github中建立个站的repo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步：安装Hexo-推荐新建一个blog文件夹"><span class="nav-number">2.</span> <span class="nav-text">第二步：安装Hexo, 推荐新建一个blog文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步：体验Hexo"><span class="nav-number">3.</span> <span class="nav-text">第三步：体验Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四步：将Hexo与Github-page连接起来"><span class="nav-number">4.</span> <span class="nav-text">第四步：将Hexo与Github page连接起来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五步：撰写博客"><span class="nav-number">5.</span> <span class="nav-text">第五步：撰写博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片插入问题解决方法"><span class="nav-number">6.</span> <span class="nav-text">图片插入问题解决方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步：安装Node-js和Git-在Github中建立个站的repo"><span class="nav-number">1.</span> <span class="nav-text">第一步：安装Node.js和Git, 在Github中建立个站的repo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步：安装Hexo-推荐新建一个blog文件夹"><span class="nav-number">2.</span> <span class="nav-text">第二步：安装Hexo, 推荐新建一个blog文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步：体验Hexo"><span class="nav-number">3.</span> <span class="nav-text">第三步：体验Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四步：将Hexo与Github-page连接起来"><span class="nav-number">4.</span> <span class="nav-text">第四步：将Hexo与Github page连接起来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五步：撰写博客"><span class="nav-number">5.</span> <span class="nav-text">第五步：撰写博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片插入问题解决方法"><span class="nav-number">6.</span> <span class="nav-text">图片插入问题解决方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章加密"><span class="nav-number">7.</span> <span class="nav-text">文章加密</span></a></li></ol></div>
             
 
           </div>
