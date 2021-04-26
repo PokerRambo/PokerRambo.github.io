@@ -305,6 +305,295 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/04/25/Python之数据分析学习路径/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fannngxun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar-sketch.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fannngxun写字的地方">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/25/Python之数据分析学习路径/" itemprop="url">Python之数据分析学习路径</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-25T18:18:54+08:00">
+                2021-04-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据分析/" itemprop="url" rel="index">
+                    <span itemprop="name">数据分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>应浙江大学心理系研博会邀请，笔者于24日晚做了一场关于利用Python进行数据分析的讲座，现将分享的材料稍作整理，希望能帮助更多的在科研等活动中需要此类工具的同学。</p>
+<h1 id="工具链与流程"><a href="#工具链与流程" class="headerlink" title="工具链与流程"></a>工具链与流程</h1><p>从全景视角来看数据分析，我们需要关心的只有两个部分：1. 有哪些工具可以使用？2. 整体的流程是怎么样的？</p>
+<p>一般地，<strong>数据分析需要的工具</strong>可以分为几类：</p>
+<ul>
+<li>解释器：python3.5 +  ,   python2已经停止维护了，所以不推荐,  <a href="https://www.python.org/" target="_blank" rel="noopener">官网链接</a>。</li>
+<li>环境管理工具： Anaconda 已经包含大部分数据科学相关的三方库，无需再手动安装，<a href="https://www.anaconda.com/" target="_blank" rel="noopener">官网链接</a>。 </li>
+<li>编辑器： Jupyter Notebook,  可以将公式、分析、代码、结果等结合在一个文档中，非常方便梳理思路和展示成果，支持部署在本地或远程服务器中，通过浏览器访问，更加轻便， <a href="https://jupyter.org/" target="_blank" rel="noopener">官网链接</a>。</li>
+<li>第三方库：<ul>
+<li>NumPy：提供了许多高级的数值编程工具，如：矩阵数据类型、矢量处理，以及精密的运算库，<a href="https://numpy.org/doc/stable/" target="_blank" rel="noopener">官方文档</a>。</li>
+<li>Pandas:  基于NumPy的一种工具，为了解决数据分析任务而创建，可以处理不规整的数据。Pandas 纳入了一些标准的数据模型，提供了高效操作百万级别数据集所需的工具。<a href="https://pandas.pydata.org/" target="_blank" rel="noopener">官方文档</a>。</li>
+<li>SciPy: 一个用于数学、科学、工程领域的常用软件包，可以处理插值、积分、优化、图像处理、常微分方程数值解的求解、信号处理等问题。<a href="https://www.scipy.org/" target="_blank" rel="noopener">官方文档</a></li>
+<li>Scikit-Learn: 集成了众多的机器学习模型，主要分为六个部分，分类、回归、聚类、数据降维、模型选择、数据预处理。<a href="https://scikit-learn.org/stable/" target="_blank" rel="noopener">官方文档</a>。</li>
+<li>statsmodels: 用于拟合多种统计模型，执行统计测试。statsmodels包含更多的“经典”频率学派统计方法，而贝叶斯方法和机器学习模型可在其他库中找到。<a href="https://www.statsmodels.org/stable/" target="_blank" rel="noopener">官方文档</a>。</li>
+<li>Matplotlib(Seaborn): 2D绘图库，它以各种硬拷贝格式和跨平台的交互式环境生成出版质量级别的图形, 可以通过几行代码生成各种统计图表。Seaborn在Matplotlib基础上构建，能够提供更好的视觉效果。<a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib官方文档</a>，<a href="https://seaborn.pydata.org/" target="_blank" rel="noopener">Seaborn官方文档</a>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>数据分析的流程</strong>可以概括为四个大步骤：</p>
+<ol>
+<li>数据采集<ul>
+<li>内部数据</li>
+<li>开源数据</li>
+<li>爬虫爬取</li>
+<li>购买数据</li>
+</ul>
+</li>
+<li>数据预处理： 看似最不起眼的步骤，往往消耗最多的时间。<ul>
+<li>数据导入</li>
+<li>数据检查</li>
+<li>数据清洗</li>
+<li>数据规约</li>
+<li>数据变换</li>
+<li>数据聚合</li>
+</ul>
+</li>
+<li>数据分析（部分方法）：重点在于理解理论背后的思想，至于编程工作往往只需调用一下API即可。<ul>
+<li>假设检验</li>
+<li>方差分析</li>
+<li>相关分析</li>
+<li>回归分析</li>
+<li>据类分析</li>
+<li>因子分析</li>
+<li>时间序列分析</li>
+</ul>
+</li>
+<li><p>数据或结果可视化</p>
+<ul>
+<li><p>图表：柱状图、折线图、散点图等等。（详细类型及适用范围见下图，图片来源<a href="https://zhuanlan.zhihu.com/p/27227106" target="_blank" rel="noopener">知乎</a>）</p>
+</li>
+<li><p>工具：Python、Excel或其他BI工具均可。</p>
+</li>
+</ul>
+</li>
+</ol>
+<img src="/2021/04/25/Python之数据分析学习路径/图表类型及应用.jpg" title="图表类型及应用">
+<h1 id="学习资料分享"><a href="#学习资料分享" class="headerlink" title="学习资料分享"></a>学习资料分享</h1><p>授人以鱼不如授人以渔，这一节分享关于Python基础和数据分析的相关资料，包含视频、博客、书籍等。一般地，对初学者来说，以视频课程学习为先，第一是因为视频可以较为完整的呈现编程的过程，而文字资料不太容易面面俱到，且视频课程往往有讨论区和课后作业，能够给学生提供良性的反馈，事半功倍；当初步入门的时候，视频学习的效率是不如书籍或博客的，文字资料可以快速定位至感兴趣的章节进行重点学习，而视频较为困难；当开始着手项目时，就更适合挑选大而全的资料作为一个字典，有问题时再查询。不同阶段适合使用不同的资料，无需持一种非此即彼的态度。</p>
+<h2 id="Python资料"><a href="#Python资料" class="headerlink" title="Python资料"></a>Python资料</h2><p>对于没有Python基础的同学来说，那就必须先搞定语言基础，下面列举一些质量有保证的资料：</p>
+<ul>
+<li>视频课程，有作业和讨论区，能够及时得到反馈，最适合小白的方式。<ul>
+<li><strong>Coursera: </strong><a href="https://link.1point3acres.com/?url=https://click.linksynergy.com/deeplink?id%3Dskg/Sko/Ybo%26amp;mid%3D40328%26amp;murl%3Dhttps://www.coursera.org/courses?query%3Dpython for everybody specialization" target="_blank" rel="noopener">Python for Everybody specialization</a> (University of Michigan, Charles Severance)   注：coursera有些课程需要注册费，但也可以写申请信免费上课，如果确实经济上力有不逮，可以走这个通道。</li>
+<li><strong>Coursera:</strong> <strong><a href="https://link.1point3acres.com/?url=https://click.linksynergy.com/deeplink?id%3Dskg/Sko/Ybo%26amp;mid%3D40328%26amp;murl%3Dhttps://www.coursera.org/specializations/introduction-scripting-in-python" target="_blank" rel="noopener">Introduction to Scripting in Python Specialization</a></strong> <strong>(Rice University)</strong></li>
+<li><a href="https://link.1point3acres.com/?url=https://www.datacamp.com/tracks/data-analyst-with-python?tap_a%3D5644-dce66f%26amp;tap_s%3D150920-af81aa" target="_blank" rel="noopener">Datacamp</a><a href="https://link.1point3acres.com/?url=https://www.datacamp.com/tracks/data-analyst-with-python?tap_a%3D5644-dce66f%26amp;tap_s%3D150920-af81aa" target="_blank" rel="noopener">: Data Analyst Track</a></li>
+<li><a href="https://www.icourse163.org/learn/BIT-268001" target="_blank" rel="noopener">中国大学</a><a href="https://www.icourse163.org/learn/BIT-268001" target="_blank" rel="noopener">MOOC Python</a><a href="https://www.icourse163.org/learn/BIT-268001" target="_blank" rel="noopener">程序语言设计</a></li>
+</ul>
+</li>
+<li><a href="https://docs.python.org/zh-cn/3/contents.html" target="_blank" rel="noopener">Python </a><a href="https://docs.python.org/zh-cn/3/contents.html" target="_blank" rel="noopener">官方文档</a></li>
+<li>系列博客：<ul>
+<li><a href="https://link.zhihu.com/?target=https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰</a><a href="https://link.zhihu.com/?target=https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">Python</a><a href="https://link.zhihu.com/?target=https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">教程</a></li>
+<li><strong><a href="https://link.zhihu.com/?target=https://www.runoob.com/python/python-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></strong></li>
+</ul>
+</li>
+<li>问题解决（不止适用于python, 编程世界的大部分疑难解决方案都在其中）：<ul>
+<li>stackoverflow: 一般的编程问题（bug）都可以找到答案，重点是合理的描述问题。</li>
+<li>Geeksforgeeks: 更综合一点的博客，更多的是给出一个具体的问题的解决方案。</li>
+<li>Github repo的issue区：遇到少见的报错，如果前面几种方式都无法解决，可以看看官方库中的issue是否对此有说明，有可能并不是你的问题。</li>
+<li>math stackexchange: 数学问题解答社区，比较适合数据科学。</li>
+<li>搜索引擎： google为上，baidu为下。常备一些常用的搜索引擎技巧，如指定特定网站搜索、指定文件类型搜索等。</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据分析学习资料"><a href="#数据分析学习资料" class="headerlink" title="数据分析学习资料"></a>数据分析学习资料</h2><p>其中公开课和书籍是帮助建立起数据分析的完整图景，代码示例可以尝试这修改来验证自己的想法，各类库的文档和cheating sheet主要用来检索合适的API。</p>
+<ul>
+<li><p>公开课</p>
+<ul>
+<li><a href="https://www.icourse163.org/course/BIT-1001870002?tid=1207408201" target="_blank" rel="noopener">Python</a><a href="https://www.icourse163.org/course/BIT-1001870002?tid=1207408201" target="_blank" rel="noopener">数据分析与展示</a></li>
+<li><a href="https://www.coursera.org/specializations/data-science-python" target="_blank" rel="noopener">借助 </a><a href="https://www.coursera.org/specializations/data-science-python" target="_blank" rel="noopener">Python </a><a href="https://www.coursera.org/specializations/data-science-python" target="_blank" rel="noopener">应用数据科学专项课程（看前两个）</a></li>
+</ul>
+</li>
+<li><p>书籍：</p>
+<ul>
+<li><a href="https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version" target="_blank" rel="noopener">https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version</a></li>
+</ul>
+</li>
+<li><p>代码（和上书对应）：</p>
+<ul>
+<li><a href="https://github.com/wesm/pydata-book" target="_blank" rel="noopener">https://github.com/wesm/pydata-book</a></li>
+</ul>
+</li>
+<li><p>各类库的官方文档（部分）：</p>
+<ul>
+<li><p>Pandas: <a href="https://www.pypandas/" target="_blank" rel="noopener">https://www.pypandas/</a></p>
+</li>
+<li><p>Numpy: <a href="https://www.numpy.org/" target="_blank" rel="noopener">https://www.numpy.org/</a></p>
+</li>
+<li><p>Matplotlib: <a href="https://matplotlib.org/" target="_blank" rel="noopener">https://matplotlib.org/</a></p>
+</li>
+</ul>
+</li>
+<li><p>Cheating sheets, 下图为Pandas的部分API及使用范例，更多sheet详见以下repo。</p>
+<ul>
+<li><a href="https://github.com/PokerRambo/Data-Science--Cheat-Sheet" target="_blank" rel="noopener">https://github.com/PokerRambo/Data-Science--Cheat-Sheet</a> </li>
+</ul>
+</li>
+</ul>
+<img src="/2021/04/25/Python之数据分析学习路径/cheatsheet.png" title="cheating sheet部分截图">
+<p>更多编程学习内容可以关注公众号”CodingSirTutor”, 回复“心理系讲座”获取讲座ppt及案例代码文件。</p>
+<img src="/2021/04/25/Python之数据分析学习路径/qrcode.jpg" title="欢迎关注CodingSirTutor">
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/04/18/个人应对矿潮的方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2658,196 +2947,6 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/12/Draw-multiple-polylines-on-Google-Map-with-Python/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Fannngxun">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar-sketch.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Fannngxun写字的地方">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/12/Draw-multiple-polylines-on-Google-Map-with-Python/" itemprop="url">Draw multiple polylines on Google Map with Python</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-12T17:58:34+08:00">
-                2018-10-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/可视化/" itemprop="url" rel="index">
-                    <span itemprop="name">可视化</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  848
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>类似拥堵路段的绘制，我们需要在地图上根据风险程度，对不同的街道着以不同的颜色。</p>
-<h3 id="困难"><a href="#困难" class="headerlink" title="困难"></a>困难</h3><ul>
-<li><p>关于绘制线段，Google Maps 只提供了 JavaScript API, 而我对JavaScript不熟。</p>
-</li>
-<li><p>数据文件在本地，需要进行预处理，JS并不擅长做数据处理和分析。</p>
-</li>
-<li><p>Google 提供的example只有相连的polyline(轨迹)， 而我需要的是绘制很多割裂的线段。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"initial-scale=1.0, user-scalable=no"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Simple Polylines<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">      /* Always set the map height explicitly to define the size of the div</span></span><br><span class="line"><span class="undefined">       * element that contains the map. */</span></span><br><span class="line"><span class="undefined">      #map &#123;</span></span><br><span class="line"><span class="undefined">        height: 100%;</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">      /* Optional: Makes the sample page fill the window. */</span></span><br><span class="line"><span class="undefined">      html, body &#123;</span></span><br><span class="line"><span class="undefined">        height: 100%;</span></span><br><span class="line"><span class="undefined">        margin: 0;</span></span><br><span class="line"><span class="undefined">        padding: 0;</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"map"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">      // This example creates a 2-pixel-wide red polyline showing the path of</span></span><br><span class="line"><span class="undefined">      // the first trans-Pacific flight between Oakland, CA, and Brisbane,</span></span><br><span class="line"><span class="undefined">      // Australia which was made by Charles Kingsford Smith.</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">      function initMap() &#123;</span></span><br><span class="line"><span class="undefined">        var map = new google.maps.Map(document.getElementById('map'), &#123;</span></span><br><span class="line"><span class="undefined">          zoom: 3,</span></span><br><span class="line"><span class="undefined">          center: &#123;lat: 0, lng: -180&#125;,</span></span><br><span class="line"><span class="undefined">          mapTypeId: 'terrain'</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        var flightPlanCoordinates = [</span></span><br><span class="line"><span class="undefined">          &#123;lat: 37.772, lng: -122.214&#125;,</span></span><br><span class="line"><span class="undefined">          &#123;lat: 21.291, lng: -157.821&#125;,</span></span><br><span class="line"><span class="undefined">          &#123;lat: -18.142, lng: 178.431&#125;,</span></span><br><span class="line"><span class="undefined">          &#123;lat: -27.467, lng: 153.027&#125;</span></span><br><span class="line"><span class="undefined">        ];</span></span><br><span class="line"><span class="undefined">        var flightPath = new google.maps.Polyline(&#123;</span></span><br><span class="line"><span class="undefined">          path: flightPlanCoordinates,</span></span><br><span class="line"><span class="undefined">          geodesic: true,</span></span><br><span class="line"><span class="undefined">          strokeColor: '#FF0000',</span></span><br><span class="line"><span class="undefined">          strokeOpacity: 1.0,</span></span><br><span class="line"><span class="undefined">          strokeWeight: 2</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        flightPath.setMap(map);</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">defer</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<img src="/2018/10/12/Draw-multiple-polylines-on-Google-Map-with-Python/example.png" title="只有“连续”线段的示例">
-<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>最终我选择用Python进行数据处理，将得到的处理结果以字符串形式插入到HTML文本中，保存，即可在浏览器中查看结果。</p>
-<p><strong>注意：</strong> string.format() 插入参数处需用“{}”标识，原有的“{}”需用“&#123;&#123;&#125;&#125;”代替。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">genHTML</span><span class="params">(filepath)</span>:</span></span><br><span class="line">    polylines, pathcolors = getDataFromFile(filepath)</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"""</span></span><br><span class="line"><span class="string">    &lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="string">    &lt;html&gt;</span></span><br><span class="line"><span class="string">      &lt;head&gt;</span></span><br><span class="line"><span class="string">        &lt;meta name="viewport" content="initial-scale=1.0, user-scalable=no"&gt;</span></span><br><span class="line"><span class="string">        &lt;meta charset="utf-8"&gt;</span></span><br><span class="line"><span class="string">        &lt;title&gt;Simple Polylines&lt;/title&gt;</span></span><br><span class="line"><span class="string">        &lt;style&gt;</span></span><br><span class="line"><span class="string">          /* Always set the map height explicitly to define the size of the div</span></span><br><span class="line"><span class="string">           * element that contains the map. */</span></span><br><span class="line"><span class="string">          #map &#123;&#123;</span></span><br><span class="line"><span class="string">            height: 100%;</span></span><br><span class="line"><span class="string">          &#125;&#125;</span></span><br><span class="line"><span class="string">          /* Optional: Makes the sample page fill the window. */</span></span><br><span class="line"><span class="string">          html, body &#123;&#123;</span></span><br><span class="line"><span class="string">            height: 100%;</span></span><br><span class="line"><span class="string">            margin: 0;</span></span><br><span class="line"><span class="string">            padding: 0;</span></span><br><span class="line"><span class="string">          &#125;&#125;</span></span><br><span class="line"><span class="string">        &lt;/style&gt;</span></span><br><span class="line"><span class="string">      &lt;/head&gt;</span></span><br><span class="line"><span class="string">      &lt;body&gt;</span></span><br><span class="line"><span class="string">        &lt;div id="map"&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="string">        &lt;script&gt;</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">          // This example creates a 2-pixel-wide red polyline showing the path of</span></span><br><span class="line"><span class="string">          // the first trans-Pacific flight between Oakland, CA, and Brisbane,</span></span><br><span class="line"><span class="string">          // Australia which was made by Charles Kingsford Smith.</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">          function initMap() &#123;&#123;</span></span><br><span class="line"><span class="string">            var map = new google.maps.Map(document.getElementById('map'), &#123;&#123;</span></span><br><span class="line"><span class="string">              zoom: 11,</span></span><br><span class="line"><span class="string">              center: &#123;&#123;lat: 40.65, lng: -74.00&#125;&#125;,</span></span><br><span class="line"><span class="string">              mapTypeId: 'roadmap'</span></span><br><span class="line"><span class="string">            &#125;&#125;);   </span></span><br><span class="line"><span class="string">            </span></span><br><span class="line"><span class="string">            var testpaths = [&#123;pathdata&#125;];</span></span><br><span class="line"><span class="string">            var testpathcolors = [&#123;pathcolors&#125;];</span></span><br><span class="line"><span class="string">            </span></span><br><span class="line"><span class="string">            for (var i=0; i &lt;testpaths.length; i++)&#123;&#123;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">              var polyline = new google.maps.Polyline(&#123;&#123;</span></span><br><span class="line"><span class="string">                path: testpaths[i],</span></span><br><span class="line"><span class="string">                geodesic: true,</span></span><br><span class="line"><span class="string">                strokeColor: testpathcolors[i],</span></span><br><span class="line"><span class="string">                strokeWeight: 2,</span></span><br><span class="line"><span class="string">                strokeOpacity: 1</span></span><br><span class="line"><span class="string">              &#125;&#125;);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">              polyline.setMap(map);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            &#125;&#125;</span></span><br><span class="line"><span class="string">          &#125;&#125;</span></span><br><span class="line"><span class="string">        &lt;/script&gt;</span></span><br><span class="line"><span class="string">        &lt;script async defer</span></span><br><span class="line"><span class="string">        src="https://maps.googleapis.com/maps/api/js?key=&#123;YOUR_API_KEY&#125;&amp;callback=initMap"&gt;</span></span><br><span class="line"><span class="string">        &lt;/script&gt;</span></span><br><span class="line"><span class="string">      &lt;/body&gt;</span></span><br><span class="line"><span class="string">    &lt;/html&gt;</span></span><br><span class="line"><span class="string">    """</span>.format(pathdata=polylines, pathcolors=pathcolors, YOUR_API_KEY=<span class="string">"YourKey"</span>)</span><br></pre></td></tr></table></figure>
-<p>​</p>
-</li>
-</ul>
-<p>生成后的HTML文件中的关键片段, 其中分离的线段可以通过多次调用setMap()实现：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">function initMap() &#123;</span></span><br><span class="line"><span class="undefined">            var map = new google.maps.Map(document.getElementById('map'), &#123;</span></span><br><span class="line"><span class="undefined">              zoom: 11,</span></span><br><span class="line"><span class="undefined">              center: &#123;lat: 40.65, lng: -74.00&#125;,</span></span><br><span class="line"><span class="undefined">              mapTypeId: 'roadmap'</span></span><br><span class="line"><span class="undefined">            &#125;);   </span></span><br><span class="line"><span class="undefined">            </span></span><br><span class="line"><span class="undefined">            var testpaths = [</span></span><br><span class="line"><span class="undefined">              [&#123;lat: 40.64204491, lng: -73.98123241&#125;,</span></span><br><span class="line"><span class="undefined">               &#123;lat: 40.64170758, lng: -73.98204322&#125;],</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">              [&#123;lat: 40.81448703, lng: -73.95545832&#125;,</span></span><br><span class="line"><span class="undefined">               &#123;lat: 40.81365059, lng: -73.95349239&#125;],</span></span><br><span class="line"><span class="undefined">              // More coordinates here...</span></span><br><span class="line"><span class="undefined">              ]</span></span><br><span class="line"><span class="undefined">            var testpathcolors = ['#EE00EE','#6495ED' //more color here...</span></span><br><span class="line"><span class="undefined">                                  ]</span></span><br><span class="line"><span class="undefined">            </span></span><br><span class="line"><span class="undefined">            for (var i=0; i &lt;testpaths.length; i++)&#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">              var polyline = new google.maps.Polyline(&#123;</span></span><br><span class="line"><span class="undefined">                path: testpaths[i],</span></span><br><span class="line"><span class="undefined">                geodesic: true,</span></span><br><span class="line"><span class="undefined">                strokeColor: testpathcolors[i],</span></span><br><span class="line"><span class="undefined">                strokeWeight: 2,</span></span><br><span class="line"><span class="undefined">                strokeOpacity: 1</span></span><br><span class="line"><span class="undefined">              &#125;);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">              polyline.setMap(map);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">		&#125;   </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>最终的结果：</p>
-<img src="/2018/10/12/Draw-multiple-polylines-on-Google-Map-with-Python/result.jpg" title="选取纽约街道进行展示">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2902,7 +3001,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2913,7 +3012,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2924,7 +3023,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2992,7 +3091,7 @@ PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">27.8k</span>
+    <span title="Site words total count">29.4k</span>
   
 </div>
 
