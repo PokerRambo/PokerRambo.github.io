@@ -305,6 +305,293 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/25/可汗学院金融学笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fannngxun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar-sketch.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fannngxun写字的地方">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/25/可汗学院金融学笔记/" itemprop="url">可汗学院金融学笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-25T17:38:17+08:00">
+                2019-04-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/经济/" itemprop="url" rel="index">
+                    <span itemprop="name">经济</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>可汗学院的课程较为浅显，主要是结合生活中的具体例子对各种金融术语进行解析。因此，我个人更偏向于把这份笔记当作是术语字典。</p>
+<h1 id="利息"><a href="#利息" class="headerlink" title="利息"></a>利息</h1><p>前两集介绍了利息的概念，并举例对利息的计算方法做了说明。利息（interest）分为两种，单利（simple interest）和复利（compound interest）。复利是指在每经过一个计息期后，都要将所剩利息加入本金，以计算下期的利息，俗称利滚利，单利则不用计入。</p>
+<p>计算方式如下，其中P为本金（principal）， t为时间， r为利率。</p>
+<p>单利: <script type="math/tex">P *(1 + tr)</script></p>
+<p>复利: <script type="math/tex">P*(1 + r)^t</script></p>
+<h1 id="现值"><a href="#现值" class="headerlink" title="现值"></a>现值</h1><p>现值（present value）就是根据当前收益率，算出一笔将来资金的当前价值。</p>
+<p>例子：假定年收益率为5%， 现在有两种选择，1. 现在就给你100元。 2. 一年后给你110元。哪种选择更划算？</p>
+<p>同样有两种思考方式：</p>
+<p>计算一年后收益（yield）= $100 * 1.05 = 105 &lt; 110​$, 选择方案2。</p>
+<p>计算现值（PV）= $110 / (1 + 0.05) = 104.76 &gt; 100$， 选择方案2。此时5%就可以理解为贴现率（discount rate）</p>
+<p>接下来用表格的方式给出3种选择, 初始值带$符号，假定无风险年利率依然为5%：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Choice1</th>
+<th>Choice2</th>
+<th style="text-align:left">Choice3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Today</td>
+<td><strong>$100</strong></td>
+<td>$104.76 / 1.05 = 99.77$</td>
+<td style="text-align:left"><strong>$20</strong> $+ 50 / 1.05 + 35 / 1.05^2  =  99.37$</td>
+</tr>
+<tr>
+<td>Year1</td>
+<td>$100 * 1.05 = 105$</td>
+<td>$110 / 1.05 = 104.76$</td>
+<td style="text-align:left"><strong>$50</strong></td>
+</tr>
+<tr>
+<td>Year2</td>
+<td>$105 * 1.05 = 110.25$</td>
+<td><strong>$110</strong></td>
+<td style="text-align:left"><strong>$35</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>现在就能在三种选择间做一个比较了，以前人们在面临制定退休计划或是面对保险推销员时总会有所困惑，如在a年b年c年交纳多少钱，然后在b,c,d年回报多少钱，现在就可以用现值做比较。</p>
+<p>在上例中，choice1 是最好的选择。</p>
+<p>如果贴现率变成2%呢？</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+PV_{choice1} &= 100 \\
+PV_{choice2} &=  110 /1.02^2 = 105.72 \\
+PV_{choice3} &= 20 + 50 /1.02 + 35/1.02^2 = 102.66
+\end{align*}</script><p>此时choice2 变成了最好的选择。</p>
+<p>到目前为止，所有的讨论都是基于相同的贴现率，那么如果贴现率是随时间变化的呢？比如存1年和存5年的利率并不相同。</p>
+<p>假设有一项国债，一年的年为利率1%，二年的年利率5%，此时三种方案又如何呢？</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+PV_{choice1} &= 100 \\
+PV_{choice2} &= 99.77 \\
+PV_{choice3} &= 20 + 50/1.01 + 35 / 1.05^2 = 101.25
+\end{align*}</script><p>在以上三种情景中，支付流并没有改变，利率的改变最终影响了各种选择的现值。</p>
+<p>而第三种选择就是所谓的贴现现金流，基于对各个时期利率的估计，利用Excel做一些简单的数学计算。</p>
+<p>再次强调，上述计算是在无风险的假设下。在金融领域里，贴现率假设无处不在，这也是金融不同与科学的地方，实际上它没有正确的答案，这些模型只是帮助你理解事物的动态。</p>
+<h1 id="资产负债表"><a href="#资产负债表" class="headerlink" title="资产负债表"></a>资产负债表</h1><p>也就是 Balance Sheet ，表里有如下的三种概念：</p>
+<ul>
+<li>资产（Assets ），可以在将来带来经济利益的东西，如钱可以用来买东西、雇佣工人、度假等，再如房子可以居住；</li>
+<li>负债（Liability ），对别人的经济负担或者义务，需要在将来偿还的；</li>
+<li>权益（Equity ），所有的资产在偿清债务之后剩余的。</li>
+</ul>
+<p>计算公式：A = L + E</p>
+<p>假设你现在有$250k现金，房价为 $1000k, 对应着三种情况：</p>
+<ul>
+<li>A. 贷款买房前</li>
+<li>B. 贷款后，银行说，你的信用等级不错，那就借给你吧；我就保留了一个IOU借据在银行。</li>
+<li>C. 买房后， 此时有了法律保障的房契以及银行的借据。 </li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>E</th>
+<th>L</th>
+<th>A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>$250k</td>
+<td>0</td>
+<td>$250k</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$250k</td>
+<td>$750k</td>
+<td>$1m</td>
+</tr>
+<tr>
+<td>C</td>
+<td>$房子 - $750k</td>
+<td>$750k</td>
+<td>房子</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>通常银行不会轻易贷款给你，需要有超过贷款额20%左右的资产作为抵押，当然现买的房子也可以。如果还不上贷款，那么银行就会收回房子，这时银行会赚25万，而你自己什么都没有了。而如果在这个过程中房价变化了，比如升值或者贬值了，负债不会变化，而权益会随着房价的变化而变化。</p>
+<h1 id="债券和股票"><a href="#债券和股票" class="headerlink" title="债券和股票"></a>债券和股票</h1><p>公司和个人一样，也有资产负债表。公司有两种途径来融资，1.发行股票。2.发行债券。这两者的区别是来源于资产负债表的不同部分。</p>
+<p>股票（stock）本质上来源于公司的权益，假设有一个公司，它的财报显示总资产是$100m, 负债是$60m, 则对应的权益应为$40m。此时如果它在市场上发行了1000万股股票，理论上每股价格应为$4($Equity / the number of stocks$)。而如果此时市场上的价格为每股$3, 则市场认为这个公司的权益没有财报显示的那么高，当然市场的反应不一定对，也有可能是股价被低估。</p>
+<p>公司的债务是在银行贷的款，银行可能将这些债务做成债券（bond）投放到市场上出售，如果银行发行了6w份该公司的债券，则相应的每份价格应为$1000。当债券到期，购买者能获得本金以及一定的利息。</p>
+<p>股票划分的是权益，而债券划分的是公司债务。两者都是证券（security），也许原文在表达上更清晰一点：A security in the equity world is a stock，A security in the debt world is a bond.</p>
+<p>对于股票持有者，他就是公司拥有人之一，获得的收益会随着公司盈利的变化而变化，而债券持有人相当于公司债权人，一定程度上不受公司经营的影响，换句话说，只要公司还的起钱，无论亏损还是盈利，该还多少钱还得还多少。</p>
+<p>思考题：当公司破产清算时，是优先还钱给债券持有人，还是分红给股东？</p>
+<p>答案：破产清算，先是偿还企业员工的工资和所欠税款。然后偿还债权人，其次偿还次级债的。最后才轮到股权的清偿。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/28/股市图表基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2359,7 +2646,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2370,7 +2657,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2381,7 +2668,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2449,7 +2736,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">30.6k</span>
+    <span title="Site words total count">31.8k</span>
   
 </div>
 

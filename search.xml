@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何从「赚一笔是一笔」到拥有「可持续的未来财富」？]]></title>
+    <url>%2F2021%2F08%2F25%2F%E5%A6%82%E4%BD%95%E4%BB%8E%E3%80%8C%E8%B5%9A%E4%B8%80%E7%AC%94%E6%98%AF%E4%B8%80%E7%AC%94%E3%80%8D%E5%88%B0%E6%8B%A5%E6%9C%89%E3%80%8C%E5%8F%AF%E6%8C%81%E7%BB%AD%E7%9A%84%E6%9C%AA%E6%9D%A5%E8%B4%A2%E5%AF%8C%E3%80%8D%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[首先是赚钱意识上的革新，就像李笑来在《通往财富自由之路》中写的那样: 每个人赚钱的方式就是每个人的商业模式，商业模式决定了个人财富的上限。 与书里稍有不同，我把个人商业模式重新划分为四类: 一份时间售卖一次 大部分的打工人都属于这种模式，签订了劳动合同就相当于把未来的劳动时间出卖给了公司，公司对你的时间只支付一次劳动报酬，在全球大放水的背景下，这种商业模式的利润也是被稀释的最厉害的，很难实现有效的资本积累。 一份时间售卖多次 作家、自媒体从业者、网课等都属于这类，通过出书，广告分成，会员费的方式，让自己的一份劳动能够售卖多次。这种方式的难点在于需要长时间的积累，必须要要在前期积累起足够的口碑才能得到市场的认可，在此之前，微薄的收入往往无法支撑日常生活的开支。如果说第一种模式是线性函数，那么第二种模式则是指数函数。 不再出售自己的时间，或者说是剥削自身，甚至可以从外部获取收入 理财投资类，创业，分销拿推广人头费等都属于这类。理财者付出时间精力学习选股、择时、研究策略，投入资金雇佣专业人士操作资产进行增值，创业者利用自身的知识、能力、人脉创办企业，雇佣劳动者，从而获取超额利润；推广者通过扩大产品的受众从而从受众处获取报酬，本身并不生产价值。 时间精力投入很少，躺赚 08 15年后买房、挖矿都属于此列。唯一的区别是，前者门槛较高，上牌桌的筹码要以百w起步，后者门槛较低，几w的台式机就可以参与。但相同的是，这两者都几乎不需要额外付出精力就能产生利润。 需要指出的是，这四种模式的赚钱绝对值未必是1&lt;2&lt;3&lt;4, , 比如，如果从事的是金融或互联网行业，那么作为打工者的收入很有可能超过普通的自媒体从业者，甚至一般的实体店利润也就几十w，远不及头部企业的中层。这种排序的标准更关注投入产出比，或者是个人自由度，这种意义下，打工的性价比是最低的，因为你大部分时间都被锁死在别人交给你的任务上，很大概率失去了建立自己事业的可能。从资质要求看，几乎所有人能够做到1，普通人垫垫脚能够做到2，3需要天赋和汗水，非人中龙凤无法做出名堂，而4则更看历史的进程和机遇，属于在电梯里做俯卧撑。 因此，为什么说师医公yyds，这三类职业只要做好自己的本职工作，口碑和人脉是水到渠成，在不违反规定的情况下，变现的方法也比比皆是，如老师出去讲座、公务员写作、医生去公司当顾问等等，相当于本职工作就包含了 1，2两种模式的潜力。 头脑中有了赚钱模式的分别，下一步就是执行，建立起合适的职业规划是最重要的一步。 大部分人都没有原始积累，因此第1步是不可或缺的，生存是基础。但如果不想靠打工挣钱一辈子，就尽量避免那些需要996的公司，超大强度的工作会让人失去思考前途的时间和精力，透支未来的潜力，如果想要过渡到模式2，就尽量选执行8小时工作制的、能够保证人文关怀的企事业单位和外企，这样在正常的工作之外，还能拥有足够的闲暇时间发展自己的副业。主业用来保证现金流，副业用来增值，主业就相当于正态分布的均值，控制着你的平均生活水平，副业则为方差，让你有机会搏一搏，单车变摩托。大刘和当年明月已经为我们探索了一条可行的路径。 模式3和4如前所述，可遇不可求，命里有时终须有，命里无时莫强求。]]></content>
+      <categories>
+        <category>财富</category>
+      </categories>
+      <tags>
+        <tag>赚钱</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python之word文档批量处理]]></title>
     <url>%2F2021%2F05%2F27%2FPython%E4%B9%8Bword%E6%96%87%E6%A1%A3%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%2F</url>
     <content type="text"><![CDATA[在文字工作中，经常会碰到与需要批量生成、编辑word文档的需求，这类机械性的工作非常适合编写小工具进行批量处理，使得原本人工处理需要几小时的工作量缩短为几分钟。 工具介绍Python下处理word文档最好用的库为 python-docx, 目前已收入pypi，直接使用pip安装即可。 新建文档可以新建一个空白文档 Document ，如下： 123from docx import Documentdocument = Document() 编辑现有文档将现存文件的路径传给Document类即可。 1234from docx import Documentdocument = Document('myfile.docx')document.save('new-file-name.docx') 新建标题新建一个标题, 其中level参数可选，有1-9中规格，代表标题级别。 1document.add_heading('新建标题', level=1) 新建段落创建段落 paragraph 的操作如下： 1paragraph = document.add_paragraph('新建段落。') 设置段落样式12paragraph = document.add_paragraph('这是一个样式为 ListBullet 的段落')paragraph.style = 'List Bullet' 设置段落对齐方式段落对齐方式有 左对齐 、 文字居中 、 右对齐 、 两端对齐，更多对齐方式请参考 WD_ALIGN_PARAGRAPH 12345678910from docx.enum.text import WD_ALIGN_PARAGRAPH# LEFT =&gt; 左对齐# CENTER =&gt; 文字居中# RIGHT =&gt; 右对齐# JUSTIFY =&gt; 文本两端对齐paragraph = document.add_paragraph("对其方式测试")paragraph_format = paragraph.paragraph_formatparagraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER 设置段落缩进设置段落缩进，可为负值： 1234from docx.shared import Inchesparagraph = document.add_paragraph("这是缩进")paragraph.paragraph_format.left_indent = Inches(0.5) 也可以设置首行缩进: 1paragraph.paragraph_format.first_line_indent = Inches(0.5) 设置段落行距当行距为 最小值 和 固定值 时，设置值单位为 磅 ，需要用 Pt ；当行距为 多倍行距 时，设置值为数值，如下： 12345678910111213from docx.enum.text import WD_LINE_SPACING#SINGLE =&gt; 单倍行距（默认）#ONE_POINT_FIVE =&gt; 1.5倍行距#DOUBLE2 =&gt; 倍行距#AT_LEAST =&gt; 最小值#EXACTLY =&gt; 固定值#MULTIPLE =&gt; 多倍行距paragraph.line_spacing_rule = WD_LINE_SPACING.EXACTLY #固定值paragraph.paragraph_format.line_spacing = Pt(18) # 固定值18磅paragraph.line_spacing_rule = WD_LINE_SPACING.MULTIPLE #多倍行距paragraph.paragraph_format.line_spacing = 1.75 # 1.75倍行间距 片段设置（Run）段落包含很多块级的格式，比如缩进、行高、制表符等。每一个小片段叫做一个 run ，可以对 run 设置粗体和斜体等属性。 123456paragraph = document.add_paragraph()paragraph.add_run('这是一个带有')paragraph.add_run('粗体').bold = Trueparagraph.add_run('和')paragraph.add_run('斜体').italic = Trueparagraph.add_run('的段落。') 更多参考资料中文：https://zhuanlan.zhihu.com/p/61340025 官方文档 ：https://python-docx.readthedocs.io/en/latest/index.html 案例介绍假设我们需要生成如下的代办xx业务的委托书，客户名字和身份证号来源于其他文件（可以是txt，excel），如果手动进行复制粘贴，费时费力，不如用上一节介绍的工具进行批量处理。 下面示例代码用于生成上图中的模板文档，中文可以自行替换; 函数接收姓名、身份证号组成的列表作为 参数（另有代码进行处理，从其他 文件获得），如[(&#39;小明&#39;, 330201xxxxxxxxxxxxx1410), ..., (&#39;小红&#39;, 330205xxxxxxxxxxxxx1701)] 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960def generate_doc(namelist): # 授权正文 content = '兹委托 xxx （身份证件号：xxxxxxxxxxxxx）' \ '到xx机关办理xx业务事项。委托人和代理人严格遵守有关xx法律法规。' # 以下为生成保密协议的代码，name_list中的每个人员都将生成对应一份保密协议文档 for names in name_list: # 创建内存中的word文档对象 file = docx.Document() file.styles['Normal'].font.name = u'宋体' file.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'宋体') # 可换成word里面任意字体 # 写入若干段落 p1 = file.add_paragraph() p1.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER # 段落文字居中设置 run = p1.add_run("办理xx事项授权委托书") run.font.size = docx.shared.Pt(20) run.bold = True # 抬头 head = file.add_paragraph() head.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT run = head.add_run("\n\nxx市xx区xx局：\n") run.font.size = docx.shared.Pt(14) # 四号字体 run.bold = True # 个人信息 p2 = file.add_paragraph() # p2.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE p2.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE p2.paragraph_format.first_line_indent = Inches(0.5) p2.add_run('本人，').font.size = docx.shared.Pt(14) run = p2.add_run('%s' % names[0]) run.font.size = docx.shared.Pt(14) p2.add_run('（身份证件号：').font.size = docx.shared.Pt(14) run = p2.add_run('%s）' % names[1]) run.font.size = docx.shared.Pt(14) p2.add_run(content + '\n').font.size = docx.shared.Pt(14) p3 = file.add_paragraph() run = p3.add_run('委托人签名： 代理人签名：\n') run.font.size = docx.shared.Pt(14) run.bold = True p5 = file.add_paragraph() p5.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT run = p5.add_run("2021 年 5 月") run.font.size = docx.shared.Pt(14) run.bold = True # 保存 file.save("./result/办理xx事项授权委托书-%s.docx" % names[0]) 如需完整代码，可以关注公众号”CodingSirTutor”, 回复“word批量处理”获取；如需定制文件模板或有特殊需求，可添加wx助手：caxiaozhushou咨询。]]></content>
@@ -80,8 +91,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>github</tag>
         <tag>website</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -214,8 +225,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>github</tag>
         <tag>website</tag>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>
